@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Raj Industries for your wire harness manufacturing needs. Get in touch with our expert team.">
+    <title>Contact Us - Raj Industries</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         Header
+         ========================================== -->
+    <header class="site-header scrolled" id="site-header">
+        <div class="header-inner">
+            <a href="home.html" class="logo">
+                <span class="logo__bold">RAJ</span>
+                <span class="logo__light">INDUSTRIES</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="hamburger" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <div class="hamburger-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+
+        <div class="mobile-overlay">
+            <nav class="mobile-nav">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+
+                <div class="mobile-contact">
+                    <a href="tel:+911234567890">+91 123 456 7890</a>
+                    <a href="mailto:info@rajindustries.com">info@rajindustries.com</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         Page Header
+         ========================================== -->
+    <section class="contact-hero">
+        <div class="contact-hero__inner">
+            <h1 class="contact-hero__title animate-fade-in-up">CONTACT US</h1>
+            <p class="contact-hero__sub animate-fade-in-up" style="animation-delay: 100ms;">Excellence in Wire Harness Manufacturing Since 2001</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Contact Info Cards
+         ========================================== -->
+    <section class="contact-info-section">
+        <div class="contact-info-grid">
+            <!-- Location -->
+            <div class="contact-info-card scroll-animate" data-delay="0">
+                <div class="contact-info-card__icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-info-card__content">
+                    <h4>Office Location</h4>
+                    <p>Industrial Area, Phase 2<br>
+                    Manufacturing Hub<br>
+                    India</p>
+                    <a href="#map-section" class="contact-info-card__link">Find Us On Map</a>
+                </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="contact-info-card scroll-animate" data-delay="150">
+                <div class="contact-info-card__icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-info-card__content">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                    <a href="#map-section" class="contact-info-card__link">Get Directions</a>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-info-card scroll-animate" data-delay="300">
+                <div class="contact-info-card__icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info-card__content">
+                    <h4>Phone</h4>
+                    <p>+91 XXX XXX XXXX<br>
+                    +91 XXX XXX XXXX</p>
+                    <a href="tel:+911234567890" class="contact-info-card__link">Call Now</a>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-info-card scroll-animate" data-delay="450">
+                <div class="contact-info-card__icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info-card__content">
+                    <h4>Email Address</h4>
+                    <p><a href="mailto:info@rajindustries.com">info@rajindustries.com</a><br>
+                    <a href="mailto:sales@rajindustries.com">sales@rajindustries.com</a></p>
+                    <a href="mailto:info@rajindustries.com" class="contact-info-card__link">Mail Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Contact Form
+         ========================================== -->
+    <section class="contact-form-section">
+        <div class="contact-form-wrapper">
+            <div class="contact-form-header scroll-animate">
+                <span class="contact-form-header__topline">Get In Touch</span>
+                <h2 class="contact-form-header__title">Contact Form</h2>
+            </div>
+
+            <form id="contactForm" class="contact-form scroll-animate" data-delay="200">
+                <div class="contact-form__row">
+                    <div class="contact-form__field">
+                        <div class="contact-form__input-wrap">
+                            <input type="text" name="con_name" id="con_name" placeholder="ENTER YOUR NAME HERE" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="contact-form__field">
+                        <div class="contact-form__input-wrap">
+                            <input type="tel" name="con_phone" id="con_phone" placeholder="ENTER YOUR NUMBER HERE">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form__row">
+                    <div class="contact-form__field">
+                        <div class="contact-form__input-wrap">
+                            <input type="email" name="con_email" id="con_email" placeholder="ENTER YOUR EMAIL HERE" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="contact-form__field">
+                        <div class="contact-form__input-wrap">
+                            <input type="text" name="con_subject" id="con_subject" placeholder="ENTER YOUR SUBJECT HERE" required>
+                            <i class="fas fa-pen"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form__field contact-form__field--full">
+                    <div class="contact-form__input-wrap">
+                        <textarea name="con_message" id="con_message" placeholder="ENTER YOUR MESSAGE HERE" rows="6" required></textarea>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+
+                <div class="contact-form__submit">
+                    <button type="submit" class="contact-form__btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Google Map
+         ========================================== -->
+    <section class="map-section" id="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30263.673208539327!2d73.92783179999999!3d18.530748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1811fa86275%3A0x35a75ba368a00091!2sMundhwa%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1770637443975!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Footer
+         ========================================== -->
+    <footer>
+        <div class="footer-top-bar"></div>
+        <div class="footer-accent"></div>
+
+        <div class="footer-main">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-col__title">RAJ INDUSTRIES</h3>
+                    <div class="footer-col__underline"></div>
+                    <p class="footer-col__tagline">Excellence in Wire Harness<br>Manufacturing</p>
+                </div>
+                <div>
+                    <h3 class="footer-col__title">QUICK LINKS</h3>
+                    <div class="footer-col__underline"></div>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col__title">CONTACT</h3>
+                    <div class="footer-col__underline"></div>
+                    <div class="footer-contact">
+                        <p>Industrial Area, Phase 2<br>Manufacturing Hub, India</p>
+                        <a href="mailto:info@rajindustries.com">info@rajindustries.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Raj Industries. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <!-- Contact Sidebar -->
+    <div class="contact-sidebar">
+        <a href="mailto:info@rajindustries.com" aria-label="Email us" title="Email us">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+            </svg>
+        </a>
+        <a href="tel:+911234567890" aria-label="Call us" title="Call us">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

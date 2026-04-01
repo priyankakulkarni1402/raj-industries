@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raj Industries - Leading manufacturer of premium wire harnesses for automotive, industrial, and aerospace sectors.">
+    <title>Raj Industries - Wire Harness Manufacturing Excellence</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         Header
+         ========================================== -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="logo__bold">RAJ</span>
+                <span class="logo__light">INDUSTRIES</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <div class="hamburger-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay">
+            <nav class="mobile-nav">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+
+                <div class="mobile-contact">
+                    <a href="tel:+911234567890">+91 123 456 7890</a>
+                    <a href="mailto:info@rajindustries.com">info@rajindustries.com</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         Hero Carousel
+         ========================================== -->
+    <section class="hero" id="hero">
+        <!-- Slide 1 -->
+        <div class="hero-slide active"
+             data-category="Products"
+             data-headline="Integrated system technology for automotive industry"
+             data-cta="Find out more"
+             data-href="#products">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=80" alt="Automotive wire harness manufacturing">
+            <div class="hero-slide__overlay"></div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide"
+             data-category="About Us"
+             data-headline="We develop and produce customized wire harnesses"
+             data-cta="Find out more"
+             data-href="#about">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80" alt="Custom wire harness development">
+            <div class="hero-slide__overlay"></div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide"
+             data-category="Quality"
+             data-headline="Excellence in manufacturing and quality assurance"
+             data-cta="Find out more"
+             data-href="#quality">
+            <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1920&q=80" alt="Quality manufacturing processes">
+            <div class="hero-slide__overlay"></div>
+        </div>
+
+        <!-- Content (shared, updated by JS) -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-text__category">Products</span>
+                <h1 class="hero-text__headline">Integrated system technology for automotive industry</h1>
+                <a href="#products" class="hero-text__cta">
+                    Find out more
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="hero-arrows">
+            <button class="hero-arrow hero-arrow--prev" aria-label="Previous slide">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            <button class="hero-arrow hero-arrow--next" aria-label="Next slide">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Indicators -->
+        <div class="hero-indicators">
+            <button class="hero-indicator active" aria-label="Go to slide 1"></button>
+            <button class="hero-indicator" aria-label="Go to slide 2"></button>
+            <button class="hero-indicator" aria-label="Go to slide 3"></button>
+        </div>
+
+        <div class="hero-bottom-gradient"></div>
+    </section>
+
+    <!-- ==========================================
+         Cable Harnesses Feature Section
+         ========================================== -->
+    <section class="cable-feature-section">
+        <div class="cable-feature-container">
+            <div class="cable-feature-topline">CABLE HARNESSES FOR PASSENGER VEHICLES</div>
+            <h2 class="cable-feature-title">From wheel arch to tailgate</h2>
+            <p class="cable-feature-desc">
+                Raj Industries, a trusted name in wire harness manufacturing, works worldwide on creating innovative solutions 
+                for the automobile industry. With approx. 2,500 employees working at 8 production sites, 
+                we are never far away from our customers. Both the major automobile manufacturers and 
+                their Tier-1 suppliers rely on the broad range of wire harnesses that we provide. At the 
+                same time, these well-known customers appreciate our service philosophy and the wealth 
+                of problem-solving expertise that Raj Industries engineers have gained through many years of 
+                experience.
+            </p>
+        </div>
+
+        <div class="cable-feature-hero">
+            <div class="cable-feature-hero__image">
+                <img src="images/wheel_arch_hero.png" alt="Close-up of car wheel arch showing wire harness integration">
+            </div>
+            <div class="cable-feature-hero__card">
+                <span class="cable-feature-hero__label">PRODUCTS</span>
+                <h3 class="cable-feature-hero__heading">Our core competence lies in the wheel arch</h3>
+                <p class="cable-feature-hero__text">
+                    Driver assistance systems and fully automated driving lead to more and more technology in the 
+                    automobile – and thus also in the wheel arch: we develop suitable solutions.
+                </p>
+                <a href="products.html" class="cable-feature-hero__link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                    READ MORE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         More RAJ INDUSTRIES Products
+         ========================================== -->
+    <section class="more-products-section">
+        <div class="more-products-container">
+            <h2 class="more-products-title">More RAJ INDUSTRIES Products</h2>
+            <div class="more-products-grid">
+                <!-- Card 1: Injection Molding -->
+                <a href="products.html" class="more-product-card">
+                    <div class="more-product-card__image">
+                        <img src="images/injection_molding.png" alt="Wire harness connectors and injection molding components">
+                    </div>
+                    <div class="more-product-card__content">
+                        <span class="more-product-card__label">PRODUCTS</span>
+                        <h3 class="more-product-card__heading">System expertise for injection molding components</h3>
+                        <p class="more-product-card__desc">
+                            Regardless of whether directly molded onto the cable or as a standalone part, 
+                            Raj Industries develops demanding system solutions for every application.
+                        </p>
+                        <span class="more-product-card__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                            READ MORE
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Card 2: Wiring Harnesses -->
+                <a href="products.html" class="more-product-card">
+                    <div class="more-product-card__image">
+                        <img src="images/wiring_harness.png" alt="3D wiring harness diagram showing complete vehicle electrical system">
+                    </div>
+                    <div class="more-product-card__content">
+                        <span class="more-product-card__label">PRODUCTS</span>
+                        <h3 class="more-product-card__heading">Wiring harnesses</h3>
+                        <p class="more-product-card__desc">
+                            We have many years of experience in the production of cable harnesses, 
+                            delivering precision-engineered solutions for every industry requirement.
+                        </p>
+                        <span class="more-product-card__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                            READ MORE
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Product Cards
+         ========================================== -->
+    <section class="products-home" id="products">
+        <div class="products-home__header scroll-animate">
+            <span class="products-home__topline">Our Expertise</span>
+            <h2 class="products-home__title">Comprehensive Wire Harness Solutions</h2>
+            <div class="products-home__underline"></div>
+        </div>
+
+        <div class="products-home__grid">
+            <!-- Card 1 -->
+            <a href="products.html" class="product-home-card" data-delay="150">
+                <div class="product-home-card__image">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="Automotive Wire Harnesses">
+                </div>
+                <div>
+                    <span class="product-home-card__category">Products</span>
+                    <h3 class="product-home-card__title">Automotive Wire Harnesses</h3>
+                    <p class="product-home-card__desc">High-performance wiring solutions engineered for modern vehicles. From engine compartments to infotainment systems, we deliver precision-crafted harnesses that meet the most demanding automotive standards.</p>
+                    <span class="product-home-card__link">
+                        Read more
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="products.html" class="product-home-card" data-delay="300">
+                <div class="product-home-card__image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Industrial Cable Assemblies">
+                </div>
+                <div>
+                    <span class="product-home-card__category">Products</span>
+                    <h3 class="product-home-card__title">Industrial Cable Assemblies</h3>
+                    <p class="product-home-card__desc">Robust assemblies built for heavy-duty industrial applications. Our cable solutions withstand extreme environments while maintaining reliable electrical connections across manufacturing and automation systems.</p>
+                    <span class="product-home-card__link">
+                        Read more
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="products.html" class="product-home-card" data-delay="450">
+                <div class="product-home-card__image">
+                    <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=800&q=80" alt="Aerospace Wiring Solutions">
+                </div>
+                <div>
+                    <span class="product-home-card__category">Products</span>
+                    <h3 class="product-home-card__title">Aerospace Wiring Solutions</h3>
+                    <p class="product-home-card__desc">Precision-engineered wire harnesses for aerospace reliability. Every connection meets rigorous certification requirements with lightweight designs optimized for aircraft and defense applications.</p>
+                    <span class="product-home-card__link">
+                        Read more
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Stats Section
+         ========================================== -->
+    <section class="stats-section">
+        <div class="stats-section__bg">
+            <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1920&q=80" alt="Manufacturing background">
+            <div class="stats-section__bg-overlay"></div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item" data-delay="0">
+                <div class="stat-item__number" data-target="25" data-suffix="+">0</div>
+                <div class="stat-item__divider"></div>
+                <p class="stat-item__label">Years Experience</p>
+            </div>
+            <div class="stat-item" data-delay="150">
+                <div class="stat-item__number" data-target="500" data-suffix="+">0</div>
+                <div class="stat-item__divider"></div>
+                <p class="stat-item__label">Satisfied Clients</p>
+            </div>
+            <div class="stat-item" data-delay="300">
+                <div class="stat-item__number" data-target="1000" data-suffix="+">0</div>
+                <div class="stat-item__divider"></div>
+                <p class="stat-item__label">Products Delivered</p>
+            </div>
+            <div class="stat-item" data-delay="450">
+                <div class="stat-item__number" data-target="50" data-suffix="+">0</div>
+                <div class="stat-item__divider"></div>
+                <p class="stat-item__label">Countries Served</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CTA Section
+         ========================================== -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content scroll-animate">
+            <h2 class="cta-content__title">Need a Custom Wire Harness<br>Solution?</h2>
+            <p class="cta-content__text">Our experts are ready to help you design and manufacture the perfect wire harness for your application.</p>
+            <a href="mailto:info@rajindustries.com" class="cta-content__button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         Footer
+         ========================================== -->
+    <footer>
+        <div class="footer-top-bar"></div>
+        <div class="footer-accent"></div>
+
+        <div class="footer-main">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="footer-col__title">RAJ INDUSTRIES</h3>
+                    <div class="footer-col__underline"></div>
+                    <p class="footer-col__tagline">Excellence in Wire Harness<br>Manufacturing</p>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="footer-col__title">QUICK LINKS</h3>
+                    <div class="footer-col__underline"></div>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="footer-col__title">CONTACT</h3>
+                    <div class="footer-col__underline"></div>
+                    <div class="footer-contact">
+                        <p>Industrial Area, Phase 2<br>Manufacturing Hub, India</p>
+                        <a href="mailto:info@rajindustries.com">info@rajindustries.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Raj Industries. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <!-- Contact Sidebar -->
+    <div class="contact-sidebar">
+        <a href="mailto:info@rajindustries.com" aria-label="Email us" title="Email us">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+            </svg>
+        </a>
+        <a href="tel:+911234567890" aria-label="Call us" title="Call us">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
