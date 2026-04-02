@@ -2111,3 +2111,30 @@ ul {
         width: 90%;
     }
 }
+
+
+/* =========================
+   RESPONSIVE FIX
+   ========================= */
+
+/* Hide hamburger & mobile menu on desktop */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-overlay {
+        display: none;
+    }
+}
+
+/* Show hamburger only on mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-overlay {
+        display: flex;
+    }
+}
