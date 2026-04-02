@@ -426,53 +426,92 @@ ul {
 }
 
 /* =========================
-   MOBILE OVERLAY (FIXED)
+   MOBILE OVERLAY (FINAL FIX)
    ========================= */
-.mobile-overlay {
+/* .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 346px;
+
+    background: rgba(26, 26, 46, 0.98);
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 80px 20px 40px;
+
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+
+    transition: all 0.4s ease;
+} */
+ .mobile-overlay {
     position: fixed;
     inset: 0;
     background: rgba(26, 26, 46, 0.98);
     z-index: 105;
-
     display: flex;
-    flex-direction: column;           /* FIX */
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;      /* FIX */
-
-    padding-top: 90px;                /* PUSH BELOW HEADER */
-    padding-bottom: 40px;
-
-    overflow-y: auto;                 /* SCROLL ENABLE */
-
+    justify-content: flex-start;
+    padding-top: 90px;
+    padding-bottom: 346px;
+    overflow-y: auto;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease;
-}
+ }
 
 .mobile-overlay.active {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 /* =========================
-   MOBILE NAV (FIXED)
+   MOBILE NAV
    ========================= */
-.mobile-nav {
+/* .mobile-nav {
+    width: 100%;
+    max-width: 300px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px; /* reduced spacing */
+    gap: 16px;
+} */
+.mobile-nav {
+    width: 100%;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .mobile-nav a {
-    font-size: 24px; /* reduced from 32px */
+    font-size: 22px;
     font-weight: 400;
     color: #ffffff;
+    text-align: center;
+    width: 100%;
+
     transition: all 0.5s ease;
     opacity: 0;
     transform: translateY(20px);
 }
 
+/* SHOW LINKS WHEN MENU OPENS */
 .mobile-overlay.active .mobile-nav a {
     opacity: 1;
     transform: translateY(0);
@@ -484,26 +523,69 @@ ul {
 .mobile-nav a:nth-child(3) { transition-delay: 0.3s; }
 .mobile-nav a:nth-child(4) { transition-delay: 0.4s; }
 .mobile-nav a:nth-child(5) { transition-delay: 0.5s; }
+/* .mobile-nav a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+} */
+
+/* .mobile-overlay.active .mobile-nav a {
+    opacity: 1;
+    transform: translateY(0);
+}
+ .mobile-overlay.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto;
+}
+.mobile-nav a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+} */
+
+/* Animation delays */
+/* .mobile-nav a:nth-child(1) { transition-delay: 0.1s; }
+.mobile-nav a:nth-child(2) { transition-delay: 0.2s; }
+.mobile-nav a:nth-child(3) { transition-delay: 0.3s; }
+.mobile-nav a:nth-child(4) { transition-delay: 0.4s; }
+.mobile-nav a:nth-child(5) { transition-delay: 0.5s; } */
 
 .mobile-nav a:hover {
     color: var(--color-primary);
 }
 
 /* =========================
-   MOBILE CONTACT (FIXED)
+   MOBILE CONTACT
    ========================= */
 .mobile-contact {
-    margin-top: 24px;
+    margin-top: 30px;
     padding-top: 20px;
+    width: 100%;
+    text-align: center;
+
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    /* transform: translateY(20px); */
+    transform: none;
     transition: all 0.5s ease 0.5s;
 }
 
@@ -521,6 +603,44 @@ ul {
 
 .mobile-contact a:hover {
     color: var(--color-primary);
+}
+
+/* =========================
+   RESPONSIVE CONTROL
+   ========================= */
+
+/* Hide on desktop */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-overlay {
+        display: none;
+    }
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-overlay {
+        display: flex;
+    }
+}
+
+/* Small screen adjustment */
+@media (max-width: 480px) {
+    .mobile-nav a {
+        font-size: 20px;
+    }
+}
+
+/* Prevent background scroll when menu open */
+body.menu-open {
+    overflow: hidden;
 }
 
 /* =========================
